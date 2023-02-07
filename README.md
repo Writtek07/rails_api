@@ -1,5 +1,5 @@
 # API For below task
-# question_bank_api
+## question_bank_api
 
 Building upon this base project, implement a RoR based REST API Server to render a **General-Knowledge Quiz Question Bank**. The questions that would be asked in the Quiz are croud-sourced, i.e. general public will be allowed to submit questions and the corresponding answer. The entire question bank should be displayed upon request. Moderators should be allowed to assign category and difficulty level to each question. We should be able to list the questions by author name (or anonymous by giving the author name as 'anonymous').
 
