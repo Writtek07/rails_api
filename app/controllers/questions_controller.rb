@@ -20,7 +20,8 @@ class QuestionsController < ApplicationController
   # POST /questions
   def create
     @question = Question.new(question_params)
-
+    @question.author = Author.find_by(name: params[:author_name])
+    @question.save!
     if @question.save
       render json: @question, status: :created, location: @question
     else
@@ -32,8 +33,8 @@ class QuestionsController < ApplicationController
   def update
     if current_moderator
       @question = Question.find(params[:id])
-      @question.update(question_params)
-      render json: @question
+      @question.update!(question_params)
+      render json: { message: 'Question updated' }, status: :ok
     else
       render json: {error: 'Not Authorized'}, status: :unauthorized
     end
