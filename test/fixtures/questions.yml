@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  actual_question: MyString
+  category: MyString
+  difficulty_level: MyString
+  answer: MyString
+  submitted_at: 2023-02-07 23:35:39
+
+two:
+  actual_question: MyString
+  category: MyString
+  difficulty_level: MyString
+  answer: MyString
+  submitted_at: 2023-02-07 23:35:39
